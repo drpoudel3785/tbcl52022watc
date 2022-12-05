@@ -22,13 +22,15 @@ session_start();
              //sql to valid login
         $sql = "SELECT * FROM users WHERE username='$usr' AND password=md5('$pwd') and status=1 and isverified=1";
         //making connection to db 
-        include("connection.php");
+        include("./connection.php");
         //executing query
         $qry=mysqli_query($conn, $sql) or die(mysqli_error($conn));
         $count=mysqli_num_rows($qry);
+        $row = mysqli_fetch_array($qry);
         if($count==1)
         {
             //registering sessions
+            $_SESSION['id'] = $row['id'];
             $_SESSION['username']=$usr;
             $_SESSION['accessid']=date("ymdhisu");
             header("Location: admin/admindashboard.php");

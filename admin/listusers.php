@@ -1,4 +1,5 @@
 <?php
+require_once("./inc_session.php");
 //Prepare the sql statement
 $sql = "SELECT * FROM users order by id DESC";
 //Connect to the database

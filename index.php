@@ -10,14 +10,17 @@
     <header>
         <nav>
            <?php include("inc_menu.php");?>
+           
+           <a href="./login.php">Log In</a>
         </nav>
 
     </header>
+    <hr>
     <main>
-        
+        <?php include("./showAllPost.php") ?>
     </main>
     <footer>
-
+        <?php include("./admin/inc_footer.php") ?>
     </footer>
     
 </body>

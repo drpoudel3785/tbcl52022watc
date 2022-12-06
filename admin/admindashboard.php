@@ -13,10 +13,6 @@ require_once("inc_session.php");
 <body>
     <div id="container">
         <?php include_once('inc_header.php');?>
-       
-
-        
-
         <div id="mamincontent">
         <h1>Welcome Admin</h1>
 

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task2 HTML</title>
+  </head>
+  <body>
+    <h1>More Fundamental of HTML</h1>
+    <p>
+      Tables should only be used for tabulated data and not for page layout. As
+      with all other HTML elements table should should be styled with CSS but we
+      will bend the rule slightly and use the boarder attribute for this
+      exercise.
+    </p>
+    <table style="border: 2px solid">
+      <tr>
+        <td style="border: 1px solid"><strong>One</strong></td>
+        <td style="border: 1px solid"><strong>Two</strong></td>
+        <td style="border: 1px solid"><strong>Three</strong></td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid"><strong>This</strong></td>
+        <td style="border: 1px solid"><strong>That</strong></td>
+        <td style="border: 1px solid"><strong>Other</strong></td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid"><strong>Which</strong></td>
+        <td style="border: 1px solid"><strong>What</strong></td>
+        <td style="border: 1px solid"><strong>When</strong></td>
+      </tr>
+    </table>
+    <h2>Lists</h2>
+    <p>
+      List are very important in webpage design. They are for example the basis
+      of page navigation
+    </p>
+    <h2>Unordered List</h2>
+    <ul>
+      <li>blue</li>
+      <li>red</li>
+      <li>green</li>
+    </ul>
+    <h2>Ordered List</h2>
+    <ol>
+      <li>blue</li>
+      <li>red</li>
+      <li>green</li>
+    </ol>
+    <h2>Nested List</h2>
+    <ul>
+      <li>One</li>
+      <li>Two</li>
+      <ol>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+      </ol>
+      <li>Three</li>
+    </ul>
+    <h2>Forms</h2>
+    <h3>A Simple login Form</h3>
+    <label for="Usernname">Usernname:</label>
+    <input type="text" name="username" placeholder="Username" />
+    <label for="Password">Password:</label>
+    <input type="password" name="Password" placeholder="Password" />
+    <input type="submit" name="submit" />
+    <h3>Other comman form elements and grouping by fieldset</h3>
+    <fieldset>
+      <legend>Enter Your Login Details</legend>
+      <label for="Usernname">Usernname:</label>
+      <input type="text" name="username" placeholder="Username" />
+      <label for="Password">Password:</label>
+      <input type="password" name="Password" placeholder="Password" />
+    </fieldset>
+    <fieldset>
+      <legend>Pizza Selection</legend>
+      <label for="Size">Size: </label>
+      <input type="radio" name="size" id="small" value="S" checked />small
+      <input type="radio" name="size" id="medium" value="M" />medium
+      <input type="radio" name="size" id="large" value="L" />large <br /><br />
+      <label for="Size">Topping: </label>
+      <select name="topping" id="">
+        <option value="select" selected>Please Select</option>
+        <option value="Cheese">Cheeze</option>
+        <option value="meat">Meat</option>
+        <option value="mozarilla">Mozarila</option>
+      </select>
+      <br /><br />
+      <label for="Size">Extras: </label>
+      <input
+        type="checkbox"
+        name="extras"
+        id="Parmesan"
+        value="P"
+        checked
+      />Parmesan
+      <input type="checkbox" name="extras" id="Olives" value="O" />Olives
+      <input type="checkbox" name="extras" id="Capers" value="C" />Capers
+    </fieldset>
+    <br />
+    <input type="submit" name="submit" value="Submit" />
+    <input type="submit" name="submit" id="Login" value="Clear" />
+  </body>
+</html>

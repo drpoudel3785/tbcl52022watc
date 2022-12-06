@@ -1,0 +1,40 @@
+body h3,
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#selector {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
+}
+.selector {
+  color: purple;
+  letter-spacing: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 1em;
+}
+li {
+  margin: 1em;
+  padding: 1em;
+  border: 2px solid green;
+  display: inline;
+  background-color: gray;
+}
+.container {
+  margin: 1em;
+}
+.right {
+  float: left;
+  border: 2px solid green;
+  padding: 2em;
+  margin: 1em;
+}
+.middel {
+  width: 50%;
+}
